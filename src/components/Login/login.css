@@ -1,0 +1,68 @@
+.container {
+    /* padding: 200px 400px; */
+    display: flexbox;
+    height: 450px;
+    width: 450px;
+    border: 1px solid black;
+    margin: 100px 300px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.email {
+    margin: 20px;
+    height: 30px;
+    width: 300px;
+    
+}
+.email:hover,
+.pwd:hover{
+    border: 2px solid skyblue;
+}
+
+.pwd {
+    margin: 10px 20px;
+    height: 30px;
+    width: 300px;
+}
+
+a {
+    padding-top: 30px;
+    text-decoration: none;
+    margin-left: 180px;
+    color:black;
+
+}
+
+.btn {
+    width: 300px;
+    height: 40px;
+    background-color: red;
+    border: transparent;
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+}
+
+p {
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    border-bottom: .5px solid lightgray ;
+    
+}
+
+p span {
+    background-color: white;
+    position: relative;
+    top: 10px;
+    padding: 0 10px
+}
+
+.signUp {
+    
+    font-weight: 300;
+    margin-top: 40px;
+}
