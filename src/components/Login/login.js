@@ -25,10 +25,7 @@ function Login() {
 
     }
     const handleChange = () => {
-        let pswdValue = inputRef1.current.value
-        if (pswdValue == "null") {
-            alert("enter password")
-        }
+        console.log("password");
     }
 
     return (
