@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* < !-- image tag is not working--> */
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            overflow: hidden;
+            border-radius: 0px;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #2d4141;
+            overflow: hidden;
+            width: 250px;
+            height: 0;
+        }
+
+        .overlay2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #dfa28f;
+            overflow: hidden;
+            width: 250px;
+            height: 0;
+            transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+            height: 100%;
+            opacity: 0.5;
+        }
+
+        .container:hover .image {
+            border-radius: 16px;
+        }
+
+        .container:hover .overlay2 {
+            height: 18%;
+        }
+
+        .text {
+            white-space: nowrap;
+            color: #ffffff;
+            font-size: 20px;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Slide in Overlay from the Bottom</h2>
+    <div class="container">
+        <img src="https://joyfulartjournaling.com/wp-content/uploads/2019/03/Art-Journal-Ideas-Using-Crate-Paper-Die-Cuts.jpg"
+            title="Explore the artistic side of you" alt="journal stickers"  width="250px";
+		     height="200px">
+        <div class="overlay"></div>
+        <div class="overlay2">
+            <div class="text"> Journal stickers</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
