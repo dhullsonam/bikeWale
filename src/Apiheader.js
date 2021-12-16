@@ -36,6 +36,9 @@ function sonam(result) {
           faliure(e)
       })
     }
+    function getValueFrom() {
+    return "sonam"
+    }
 
 
-    export { createHeaders, getRequests, makeApiRequest };
+    export { createHeaders, getRequests, makeApiRequest ,getValueFrom};
