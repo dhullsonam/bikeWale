@@ -5,6 +5,7 @@ import AddNewRepo from "./components/AddNewRepo";
 import ActionCreator from "./components/CompoTalk/ActionCreator";
 import DeleteRepo from "./components/DeleteRepo";
 import ExOfMaterialUI, { CustomButton } from "./components/ExOfMaterial";
+import CheckVoteEligiblity from "./components/CheckVoteEligiblity";
 
 
 
@@ -15,7 +16,8 @@ function App() {
        <DeleteRepo/> 
       <ExOfMaterialUI/>
       <CustomButton/> */}
-      <ActionCreator/>
+      {/*<ActionCreator/>*/}
+        <CheckVoteEligiblity/>
     </>
   );
 }
