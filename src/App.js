@@ -6,6 +6,8 @@ import ActionCreator from "./components/CompoTalk/ActionCreator";
 import DeleteRepo from "./components/DeleteRepo";
 import ExOfMaterialUI, { CustomButton } from "./components/ExOfMaterial";
 import CheckVoteEligiblity from "./components/CheckVoteEligiblity";
+import DetailedList from "./components/DetailedList";
+import MyNewComponent from "./components/MyNewComponent";
 
 
 
@@ -17,7 +19,9 @@ function App() {
       <ExOfMaterialUI/>
       <CustomButton/> */}
       {/*<ActionCreator/>*/}
-        <CheckVoteEligiblity/>
+      {/*  <CheckVoteEligiblity/>*/}
+      {/*  <DetailedList/>*/}
+        <MyNewComponent/>
     </>
   );
 }

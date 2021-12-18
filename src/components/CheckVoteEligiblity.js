@@ -15,9 +15,9 @@ function CheckVoteEligiblity() {
     return (
         <div>
             <h2>Check your Eligiblity to cast Vote</h2>
-            <input placeholder={"Enter your Age"} ref={refToAge}></input>
-            <Button variant={"contained"} size={"small"} onClick={ageHandler}>Check-Eligiblity</Button>
-            {checkAge===null? <h2>Please Wait : </h2>: <RefToVoteEligiblity value={ checkAge}/>}
+            <input placeholder="Enter your Age" ref={refToAge}></input>
+            <Button variant="contained" size="small" onClick={ageHandler}>Check-Eligiblity</Button>
+            { checkAge===null? <span/>: <RefToVoteEligiblity value={checkAge}/> }
 
         </div>
     )
