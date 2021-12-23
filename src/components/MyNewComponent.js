@@ -1,22 +1,16 @@
 import React, {useState} from "react";
-import ChlidComponent from "./ChlidComponent";
-
+import ChlidComponent from "./ButtonComponent";
+import uniqid from 'uniqid';
 
 function MyNewComponent() {
     const [item ,setItem] =useState([])
-    const handleMyEvent = ()=>{
-        console.log("parent")
-        fetch("https://api.github.com/users/dhullsonam/repos")
-            .then(response=>response.json())
-            .then(data =>setItem(data))
-    }
 
     return (
         <div>
-            <ChlidComponent myInfo={handleMyEvent}/>
+          <h1> Here is the List</h1>
             <ol>
-                {item.map(i=>{
-                    return <li><h4>{i.full_name}</h4></li>
+                {item.map((i)=>{
+                    return <li key={uniqid()}><h4>{i.full_name}</h4></li>
                 })}
             </ol>
         </div>
