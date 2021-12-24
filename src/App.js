@@ -10,6 +10,8 @@ import MyNewComponent from "./components/MyNewComponent";
 import ButtonComponent from "./components/ButtonComponent";
 import InputValue from "./components/InputValue";
 import {AppProvider} from "./components/Context";
+import DataProvider from "./contextApi/DataProvider";
+import BtnComponent from "./contextApi/BtnComponent";
 
 
 function App() {
@@ -22,11 +24,14 @@ function App() {
             {/*<ActionCreator/>*/}
             {/*  <CheckVoteEligiblity/>*/}
             {/*  <DetailedList/>*/}
-            <AppProvider>
-                <InputValue/>
-                <ButtonComponent/>
-                <MyNewComponent/>
-            </AppProvider>
+            {/*<AppProvider>*/}
+            {/*    <InputValue/>*/}
+            {/*    <ButtonComponent/>*/}
+            {/*    <MyNewComponent/>*/}
+            {/*</AppProvider>*/}
+            <DataProvider>
+                <BtnComponent/>
+            </DataProvider>
 
         </>
     );
