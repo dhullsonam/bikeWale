@@ -8,7 +8,9 @@ import {createStore} from "redux";
 import {myRed} from "./components/Reducers";
 import {Provider} from "react-redux";
 
-let ourStore = createStore(myRed, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+import MyReducer from "./components/Reduce/reducer";
+
+let ourStore = createStore(MyReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
     <Provider store={ourStore}>

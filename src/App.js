@@ -1,6 +1,8 @@
 import React from "react"
 import PlusMinusButtons from "./components/PlusMinusButtons";
 import Heading from "./components/Heading";
+import OnMyButtonClick from "./components/Action/action";
+import Lists from "./components/list";
 // import {BrowserRouter, Routes, Route, Link, Router} from "react-router-dom";
 // import AddNewRepo from "./components/AddNewRepo";
 // import ActionCreator from "./components/CompoTalk/ActionCreator";
@@ -20,8 +22,8 @@ import Heading from "./components/Heading";
 function App() {
     return (
         <>
-            <Heading></Heading>
-            <PlusMinusButtons></PlusMinusButtons>
+            <OnMyButtonClick/>
+            <Lists/>
         </>
     );
 }
