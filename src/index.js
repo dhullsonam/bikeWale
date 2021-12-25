@@ -5,44 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
 import {createStore} from "redux";
+import {myRed} from "./components/Reducers";
+import {Provider} from "react-redux";
 
-
-
-//Actions
-let print = () => {
-    console.log("running")
-    let myObj = {
-        type: "runTV"
-    }
-    return myObj
-}
-
-//Reducer
-let ourReducer = (state = "", action) => {
-    switch (action.type) {
-        case "runTV":
-            state = "H1"
-            return state
-    }
-}
-
-let myStore = createStore(ourReducer)
-
-
-myStore.subscribe( () => {
-    console.log(myStore.getState())
-})
-
-
-myStore.dispatch(print())
+let ourStore = createStore(myRed, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
- 
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>,
-
-  
+    <Provider store={ourStore}>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </Provider>,
   document.getElementById('root')
 );
 
